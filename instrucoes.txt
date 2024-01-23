@@ -1,0 +1,14 @@
+# iniciando o npm na pasta
+npm init -y
+
+# instalando babel e webpack etc
+npm install --save-dev @babel/preset-env @babel/core @babel/cli babel-loader webpack webpack-cli regenerator-runtime core-js@2
+
+# Criar arquivo webpack.config.js
+
+# Criar pasta src
+
+# criar pasta public
+
+# corrigir
+npm i core-js regenerator-runtime
