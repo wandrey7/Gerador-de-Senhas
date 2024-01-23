@@ -15,13 +15,14 @@ export default () => {
 };
 
 function gera() {
+    const tamanhoMaximo = 40; // Defina o tamanho máximo desejado
     const senha = geraSenha(
-        qtdCaracteres.value,
+        Math.min(qtdCaracteres.value, tamanhoMaximo),
         chkMaiusculas.checked,
         chkMinusculas.checked,
         chkNumeros.checked,
         chkSimbolos.checked
-        );
+    );
 
     return senha || 'Nada selecionado.';
 }
